@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Logika Pengolahan Kalimat</h2>
+
+<form method="post">
+    <div>
+        <label for="inputText">Masukkan Teks:</label>
+        <input type="text" id="inputText" name="InputText" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Proses</button>
+</form>
+
+<div>
+    <h3>Hasil:</h3>
+    <p>@Model.OutputText</p>
+</div>
