@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mahlil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adb221a0960ffd75e2c13db4da65302cbb61f80d")]
 [assembly: System.Reflection.AssemblyProductAttribute("mahlil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mahlil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

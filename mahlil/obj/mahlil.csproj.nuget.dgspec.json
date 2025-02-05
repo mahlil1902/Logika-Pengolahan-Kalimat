@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\codingan\\mahlil\\mahlil\\mahlil.csproj": {}
+    "C:\\codingan\\Logika-Pengolahan-Kalimat\\mahlil\\mahlil.csproj": {}
   },
   "projects": {
-    "C:\\codingan\\mahlil\\mahlil\\mahlil.csproj": {
+    "C:\\codingan\\Logika-Pengolahan-Kalimat\\mahlil\\mahlil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\codingan\\mahlil\\mahlil\\mahlil.csproj",
+        "projectUniqueName": "C:\\codingan\\Logika-Pengolahan-Kalimat\\mahlil\\mahlil.csproj",
         "projectName": "mahlil",
-        "projectPath": "C:\\codingan\\mahlil\\mahlil\\mahlil.csproj",
+        "projectPath": "C:\\codingan\\Logika-Pengolahan-Kalimat\\mahlil\\mahlil.csproj",
         "packagesPath": "C:\\Users\\mahli\\.nuget\\packages\\",
-        "outputPath": "C:\\codingan\\mahlil\\mahlil\\obj\\",
+        "outputPath": "C:\\codingan\\Logika-Pengolahan-Kalimat\\mahlil\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

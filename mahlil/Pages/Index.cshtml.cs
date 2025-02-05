@@ -19,12 +19,12 @@ public class IndexModel : PageModel
 
     private string ProcessText(string input)
     {
-        // Menghapus spasi dari input agar penghitungan global
+        // ini ngapus spasi dulu biar jadi satu kata biar gampang hitung hurufnya
         string cleanedInput = input.Replace(" ", "");
 
-        // Hitung frekuensi setiap huruf dalam seluruh input
+        // ini hitung jumlah setiap huruf
         Dictionary<char, int> frequency = new Dictionary<char, int>();
-        List<char> order = new List<char>(); // Untuk menyimpan urutan kemunculan pertama kali
+        List<char> order = new List<char>();
 
         foreach (char ch in cleanedInput)
         {
@@ -33,30 +33,29 @@ public class IndexModel : PageModel
             else
             {
                 frequency[ch] = 1;
-                order.Add(ch); // Simpan urutan pertama kali muncul
+                order.Add(ch); 
             }
         }
 
-        // Urutkan berdasarkan jumlah kemunculan (descending)
-        // Jika jumlah sama, maka urutkan berdasarkan urutan pertama kali muncul
+        //ini buat ngurutin huruf dengan jumlah terbanyak yang dimunculkan pertama
         var sortedChars = frequency
-            .OrderByDescending(kvp => kvp.Value) // Urutkan berdasarkan jumlah kemunculan (banyak ke sedikit)
-            .ThenBy(kvp => order.IndexOf(kvp.Key)) // Jika jumlah sama, urutkan berdasarkan urutan awal muncul di input
+            .OrderByDescending(kvp => kvp.Value)
+            .ThenBy(kvp => order.IndexOf(kvp.Key))
             .ToList();
 
-        // Bangun hasil output
+        // ini tampungan buat output
         string repeatedChars = "";
         string singleChars = "";
 
         foreach (var kvp in sortedChars)
         {
             if (kvp.Value > 1)
-                repeatedChars += kvp.Key.ToString() + kvp.Value; // Huruf + jumlah kemunculan
+                repeatedChars += kvp.Key.ToString() + kvp.Value; // ini nampung huruf yang lebih dari satu
             else
-                singleChars += kvp.Key; // Huruf yang hanya muncul sekali
+                singleChars += kvp.Key; // ini nampung huruf yang cuma muncul sekali
         }
 
-        // Gabungkan hasil akhir dengan spasi antara dua bagian
+        // ini hasil akhirnya 
         return repeatedChars + " " + singleChars;
     }
 }
